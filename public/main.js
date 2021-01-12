@@ -61,5 +61,5 @@ function loadResult() {
 
     // EXAMPLE 2.2: Use the logic from Worker parallel thread ===================
     // emit message event to worker
-    worker.postMessage(null); // we don't need payload here
+    // worker.postMessage(null); // we don't need payload here
 };
