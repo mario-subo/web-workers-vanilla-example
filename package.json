@@ -1,0 +1,14 @@
+{
+  "name": "web-workers-vanilla",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "start": "http-server ./public -p 3000"
+  },
+  "author": "Mario Subotic",
+  "license": "ISC",
+  "dependencies": {
+    "http-server": "^0.12.3"
+  }
+}
