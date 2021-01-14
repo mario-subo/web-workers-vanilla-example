@@ -3,8 +3,8 @@ var worker = new Worker('worker.js');
 // EXAMPLE 1: ===================
 // listen to message event of worker
 worker.addEventListener('message', function(event) {
-    var div = document.getElementById('result');
-    div.innerHTML = 'message received from worker => ' + event.data;
+    var resultsElement = document.getElementById('result');
+    resultsElement.innerHTML = 'message received from worker => ' + event.data;
 });
 
 // listen to error event of worker
@@ -42,8 +42,8 @@ function heavilyComputatedValue() {
 // load results from web worker
 function loadResult() {
     // add loading text until `message` event listener replaces it
-    var div = document.getElementById('result');
-    div.innerHTML = 'loading...';
+    var resultsElement = document.getElementById('result');
+    resultsElement.innerHTML = 'loading...';
 
 
 
@@ -51,7 +51,7 @@ function loadResult() {
 
     // EXAMPLE 2.1: Blocking the UI on the main thread ===================
     // var x = heavilyComputatedValue();
-    // div.innerHTML = `message received on main thread => ` + x;
+    // resultsElement.innerHTML = `message received on main thread => ` + x;
 
 
 
